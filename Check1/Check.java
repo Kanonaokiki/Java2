@@ -14,15 +14,17 @@ public class Check{
             System.out.print(data[i] + " ");
         }
         System.out.println();
-         for (int i = 0; i < 4/*ここに記述*/; i++) {
-            for (int j = i+1/*ここに記述*/; j > i; j--) {
+         for (int i = 0; i < data.length-1/*ここに記述*/; i++) {
+            //何回比較をするかをiとする
+            for (int j = data.length-1/*ここに記述*/; j > i; j--) {
+            //比較をする最初の場所をjとする 
         //         /*
         //         * 問3
         //         * 以下、配列の添字を入れてソートを完成させなさい
         //         */
-                if(data[i/*ここに記述*/] > data[j/*ここに記述*/]){
-                  int box = data[i/*ここに記述*/];
-                  data[i/*ここに記述*/] = data[j/*ここに記述*/];
+                if(data[j-1/*ここに記述*/] > data[j/*ここに記述*/]){
+                  int box = data[j-1/*ここに記述*/];
+                  data[j-1/*ここに記述*/] = data[j/*ここに記述*/];
                   data[j/*ここに記述*/] = box;
                 }
             }
