@@ -1,0 +1,101 @@
+@media screen and (max-width: 1024px) {/* スクリーンサイズが1024px以上の場合に適用 */} 
+/* .body{
+    width:100%;
+} */
+
+.wrapper{
+    /* width:600px; */
+    margin: 0 auto;
+/* wrapperクラスを中央寄せ */
+}
+
+.header{
+    height:100px;
+    width:400px;
+    background:#141f40;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.contents-clearfix{
+    height:250px;
+    width:250px; 
+}
+.left{
+    height:250px;
+    width:150px;
+    background:#80bfa8;   
+    float: left;
+}
+.right{
+    height:250px;
+    width:400px;
+    background:#8c2727;
+}
+.footer{
+    height:100px;   
+    width:400px;
+    background:#d98d30;
+}
+
+ @media screen and (max-width: 767px) {
+.wrapper{
+    margin: 0 auto;}
+/* wrapperクラスを中央寄せ */
+
+
+.header{
+    height:100px;
+    width:250px;
+    background:#141f40;
+}
+.left{
+    height:250px;
+    width:150px;
+    background:#80bfa8;   
+}
+.right{
+    height:250px;
+    width:100px;
+    background:#8c2727;
+    float:right;
+}
+.footer{
+    height:100px;   
+    width:250px;
+    background:#d98d30;
+}  
+}
+
+@media screen and (max-width: 479px)  { 
+.wrapper{
+    width: 150px;
+    margin: 0 auto;}    
+
+.header{
+    height:100px;
+    width:150px;
+    background:#141f40;
+}
+.left{
+    height:250px;
+    width:150px;
+    background:#80bfa8; 
+    float: left; 
+}
+.right{
+    height:250px;
+    width:150px;
+    background:#8c2727;
+    float: left;
+}
+    
+.footer{
+    height:100px;   
+    width:150px;
+    background:#d98d30;
+    float: left;
+}
+}
