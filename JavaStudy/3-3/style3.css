@@ -1,7 +1,7 @@
 .header{
     height:100px;
     width:400px;
-    padding-top:20px;
+    padding-top:40px;
     background:#141f40;
 }
 .clearfix::after {
@@ -22,33 +22,34 @@
 
 }
 .right{
-    height:250px;
+    height:220px;
     width:400px;
     background:#8c2727;
+    padding-top:30px;
 
 }
 .upper-right{
     height:60px;
     width:160px;
-    margin: 0px 20px 20px 210px;
-    /* padding-top:20px; */
+    margin: 0px 0px 0px 210px;
+    padding-top:10px; 
+    /* padding-bottom: 10px; */
     background:#ffffff;
 }
 .box1{
-    height:40px;
+    height:20px;
     width:40px;
-    margin: 20px 110px 10px 10px;
+    margin: 10px 110px 10px 10px;
     /* padding-top:10px; */
     background:#a9004b;
 }
 
 .upper-top{
-    height:50px;
+    height:20px;
     width:150px;
     margin-right:60px;
     margin-bottom:140px;
     margin-left:190px;
-    padding-top:40px;
     background:#ffffff;
 }
 .upper-center{
