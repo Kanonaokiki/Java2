@@ -1,0 +1,22 @@
+package com.example.demo.entity;
+
+import lombok.Data;
+
+@Data
+public class NewuserEntity {
+
+	private int id;
+	private String name;
+	private String name_kana;
+	private String mail_address;
+	private String password;
+
+
+
+
+}
+
+
+
+
+

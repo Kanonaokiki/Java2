@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SchooLandApplication.java&apos; to &apos;SchooLand2/src/main/java&apos;&#x0A;- 元のプロジェクト: &apos;SchooLand&apos;&#x0A;- 宛先要素: &apos;SchooLand2/src/main/java&apos;&#x0A;- オリジナル要素: &apos;schoo.SchooLandApplication.java&apos;" description="コンパイル単位をコピー" destination="=SchooLand2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;schoo{SchooLandApplication.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1672834321073" units="1" version="1.0"/>
+</session>

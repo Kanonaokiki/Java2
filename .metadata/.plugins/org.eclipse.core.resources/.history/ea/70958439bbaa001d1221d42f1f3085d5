@@ -1,0 +1,55 @@
+package com.example.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.demo.entity.NewuserEntity;
+import com.example.demo.service.NewuserService;
+import com.example.demo.service.NewuserServiceImpl;
+
+@Controller
+public class Newuser {
+
+
+	  @Autowired
+	  private NewuserService newuserService;
+
+
+	    @RequestMapping("/user")
+	    public String user() {
+//	        String username = httpServletRequest.getRemoteUser();
+////	        User user = userRepository.getOne(username);
+////	        modelMap.addAttribute("user", user);
+	        return "/Newuser";
+	    }
+
+//	    @GetMapping("/user")
+//	    public String back() {
+//	     return "/Newuser";
+//	    }
+
+	    @PostMapping("/#")
+	    public String henshu(@PathVariable Integer id, Model model) {
+	    	NewuserEntity newuserEntity = newuserService.findById(id);
+	    	NewuserEntity newuserEntity2 = new NewuserEntity();
+	    	newuserEntity2.setId(newuserEntity.getId());
+	    	newuserEntity2.setName(newuserEntity.getName());
+	    	newuserEntity2.setName_kana(newuserEntity.getName_kana());
+	    	newuserEntity2.setMail_address(newuserEntity.getMail_address());
+	    	newuserEntity2.setPassword(newuserEntity.getPassword());
+	        model.addAttribute("NewUserUpdate", newuserEntity2);
+	        return "user/edit";
+	    }
+
+	}
+
+	//1行目: 引数にHttpServletRequestを指定することによってそのオブジェクトが取得できる。
+	//2行目: getRemoteUserメソッドでユーザ名を取得する。
+	//3行目: getOneメソッドは、JpaRepositoryに最初から用意されているメソッドで、IDからインスタンスを取得することができる。
+	//4行目: addAttributeメソッドで、userをビューに送る。String以外のオブジェクトでもビューに送ることができる。
+
