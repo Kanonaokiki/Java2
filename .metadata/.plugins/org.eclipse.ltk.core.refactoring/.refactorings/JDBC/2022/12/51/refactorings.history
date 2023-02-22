@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;lib&apos; to &apos;4-4&apos;&#x0A;- 元のプロジェクト: &apos;JDBC&apos;&#x0A;- 宛先要素: &apos;4-4&apos;&#x0A;- オリジナル要素: &apos;lib&apos;" description="フォルダーをコピー" destination="=4-4" element1="lib" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1670946638383" units="0" version="1.0"/>
+</session>

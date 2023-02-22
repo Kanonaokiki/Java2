@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="2 個のリソースを削除" deleteContents="true" description="2 個のリソースを削除" element1="/MyApp01" element2="/MyApp02" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1672831150364"/>&#x0A;<refactoring comment="リソース &apos;SchooLand2&apos; を削除" deleteContents="true" description="リソース &apos;SchooLand2&apos; を削除" element1="/SchooLand2" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1672834953629"/>
+</session>

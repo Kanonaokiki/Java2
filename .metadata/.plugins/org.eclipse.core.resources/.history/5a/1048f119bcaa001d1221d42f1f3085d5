@@ -1,0 +1,26 @@
+package com.example.demo.service;
+
+import java.io.Serializable;
+
+import com.example.demo.entity.NewuserEntity;
+
+//public class NewuserServiceImpl implements NewuserService {
+	public class NewuserServiceImpl extends NewuserEntity implements Serializable {
+	private Integer id;
+//	private String name;
+//	private String name_kana;
+//	private String mail_address;
+//	private String password;
+//	@Override
+//	public String greet(int i) {
+//		// TODO 自動生成されたメソッド・スタブ
+//		return null;
+//	}
+//
+//	@Override
+//	public ArrayList<NewuserEntity> getAll() {
+//		// TODO 自動生成されたメソッド・スタブ
+//		return null;
+//	}
+
+}

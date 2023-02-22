@@ -1,0 +1,40 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.demo.entity.ExpencesEntity;
+import com.example.demo.entity.Prefectures;
+import com.example.demo.entity.PrivateEntity;
+import com.example.demo.form.ExpencesForm;
+import com.example.demo.repository.PrivateRepository;
+import com.example.demo.repository.PrefecturesRepository;
+
+@PrivateService
+@Transactional
+public class Service {
+	@Autowired
+	PrivateRepository privateRepository;
+
+	//  DBから全件取得
+	public List<PrivateEntity> findAllByOrderByIdAsc() {
+		return privateRepository.findAllByOrderByIdAsc();
+	}
+	/**
+	 * 経費申請新規登録
+	 * @param expencesForm 経費申請情報
+	 */
+	public void insert(PrivateEntity privateEntity) {
+		ExpencesEntity expencesEntity = new ExpencesEntity();
+		expencesEntity.setUserId(expencesForm.getUserId());
+		expencesEntity.setApplicationDate(expencesForm.getApplicationDate());
+		expencesEntity.setExpencesItem(expencesForm.getExpencesItem());
+		expencesEntity.setAmountMoney(expencesForm.getAmountMoney());
+		expencesEntity.setRemarks(expencesForm.getRemarks());
+		// データベースに登録する
+		expencesRepository.save(expencesEntity);
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;login-ok.html&apos; to &apos;templates&apos;&#x0A;- 元のプロジェクト: &apos;schoo1&apos;&#x0A;- 宛先要素: &apos;templates&apos;&#x0A;- オリジナル要素: &apos;login-ok.html&apos;" description="ファイルをコピー" element1="src/main/resources/templates/login-ok.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1671270003356" target="/schoo1/src/main/resources/templates" units="0" version="1.0"/>
+</session>

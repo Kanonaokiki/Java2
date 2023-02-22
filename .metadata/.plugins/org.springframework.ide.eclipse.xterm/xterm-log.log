@@ -1,0 +1,13 @@
+shutdown props: {
+  "on": true,
+  "delay": 30
+}
+pty props: {
+  "shutdown": "DELAY",
+  "shutdownDelay": 5
+}
+Express server currently running on port 52128
+Shell: '/bin/bash'
+Cmd: []
+Terminating pty process for id=dfb76487-c03a-44e5-9496-124c3e8372ae
+Auto shutting down due to no activity...

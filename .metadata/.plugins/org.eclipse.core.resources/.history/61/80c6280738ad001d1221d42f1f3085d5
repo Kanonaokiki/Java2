@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--Thymeleafを使用するために記述-->
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" th:href="@{/css/attendance.css}">
+</head>
+
+<!--中身-->
+<body>
+	<div id="wrapper">
+
+		<!--ヘッダー-->
+		<div class="header">
+			<h1>出勤報告</h1>
+		</div>
+
+		<form th:action="@{/Attendance}" th:object="${AttendanceForm}"
+			method="post">
+			
+			<div class="error" th:errors="*{userId}"></div>
+			<label>ユーザーID</label><br>
+			<input type="text" th:field="*{userId}" >
+			
+			<!--ステータスの処理(プルダウン)-->
+			<div class="error" th:errors="*{status}"></div>
+			 <div class="status">
+				<label>ステータス</label><br>
+				<select name="status">
+					<option value="出勤">出勤</option>
+					<option value="遅刻">遅刻</option>
+					<option value="休日">休日</option>
+					<option value="有給">有給</option>
+					<option value="代休">代休</option>
+					<!-- <option value="othersholiday">休日（その他）</option> -->
+					<option value="その他">その他</option>
+				</select>
+			</div>
+
+			<!--出勤日(カレンダー)-->
+			<div class="start_date">
+			<div class="error" th:errors="*{startdate}"></div>
+				<label>出勤日</label><br>
+
+				 <input type="date" th:field = "*{startdate}">
+				</div>
+			
+
+			<!--出勤時間(プルダウン？テキスト？)-->
+			<div class="start_time">
+			<div class="error" th:if="${#fields.hasErrors('starttime')}" th:errors="*{starttime}"></div>
+				<label>出勤時間</label><br>
+				<input type="time" th:field="*{starttime}">
+			
+			</div>
+			<div class="remarks">
+			<div class="error" th:errors="*{remarks}"></div>
+				<!--<label for="message">お問い合わせ内容</label><br>-->
+				<label>備考</label><br> <input type="text" th:field="*{remarks}">
+			</div>
+
+			<!--登録-->
+			<div class="register">
+				<input type="submit" value="登録"> <br>
+
+				<!--分からない↑submit? button?たぶんsubmit-->
+			</div>
+		</form>
+		<!--戻る-->
+		<div class="return">
+			<a th:href="@{/mypage}"> <input type="button" value="戻る"></a>
+		</div>
+
+	</div>
+</body>
+</html>

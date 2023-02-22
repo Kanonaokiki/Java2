@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<runner version="1.0.0">
+    <category expanded="true" name="カテゴリーなし">
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Attacher"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Check"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Check (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DBAccess"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DBAccess (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DBPrepared"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DBPrepared (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DBSelect"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DBUpdate"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ExException"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="GreetMain"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Main"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Main (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Main (2)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Main (3)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="MyApp01"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="NanaumiMain"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="PGJDBCMain"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="PGJDBCMain (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Question12_01"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Question12_02"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Question13_01"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ResourceMain"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="SchooLand"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="SchooLand (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="SchooLand - SchooLandApplication"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="SchooLand1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="SchooLand1 - SchooLand1Application"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="SchooLand2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="SchooLand2 - SchooLand2Application"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="SchooSample23-2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Study"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Study (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Study (2)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="TeamDebelopment_2301 - TeamDebelopment2301Application"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="TeamDebelopment_2301 - TeamDebelopment2301Application (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="TeamDebelopment_2301 - TeamDebelopment2301Application (2)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="test"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="新規構成"/>
+    </category>
+</runner>

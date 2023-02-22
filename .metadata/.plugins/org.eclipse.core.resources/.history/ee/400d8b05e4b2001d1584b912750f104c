@@ -1,0 +1,24 @@
+package com.example.demo.form;
+
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
+import lombok.Data;
+
+@Data
+public class PrivateForm {
+	@NotNull(message = "IDを入力してください")
+	private Integer id;
+
+	@NotEmpty(message = "名前を入力してください")
+	private String name;
+
+	@NotEmpty(message = "誕生日を入力してください")
+	private Integer birthday;
+
+	@NotNull(message = "性別を入力してください")
+	private String sex;
+
+	@NotNull(message = "出身地を入力してください")
+	private String birthplace;
+}

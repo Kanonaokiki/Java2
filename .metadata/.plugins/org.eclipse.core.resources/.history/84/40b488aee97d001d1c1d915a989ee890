@@ -1,0 +1,61 @@
+package schoo1;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation. ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+/**
+ * Springで作成する簡単なログインのサンプルクラスです.
+ */
+@Controller
+public class SchooController {
+	/**
+	 * トップページへのリクエスト
+	 * @return index.htmlのパス
+	 */
+	@Autowired
+	HttpSession session;
+
+	@GetMapping("/")
+//	@RequestMapping("/")
+	public String index() {
+		// index.htmlのパスを返却する
+		// 以下の場合、templates内のindex.htmlを表示する指示
+		String login=(String)session.getAttribute("Login");
+		if("ok".equals(login)) {
+			return "logout";
+		}else {
+			return "index";
+		}
+	}
+
+
+	/**
+	 * ログイン処理リクエスト
+	 * @param loginId	ログイン
+	 * @param loginPassword	パスワード
+	 * @return ログイン結果画面のパス
+	 */
+//	@PostMapping("login")
+	@RequestMapping("login")
+	public String login(＠Validated ＠ModelAttribute("loginForm") LoginForm loginForm,
+						BindingResult bindingResult) {
+
+		if(bindingResult.hasErrors()) {
+			return "login-ng";
+		}
+		// ログインチェック
+		// 今回はDB等を使用せずにリクエストパラメータと文字列の比較でチェックします
+		if ("schoo".equals(loginId) && "pass".equals(loginPassword)) {
+			// ログイン成功
+			return "login-ok";
+		} else {
+			// ログイン失敗
+			return "login-ng";
+		}
+	}

@@ -1,0 +1,46 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.demo.service.NewuserService;
+
+@Controller
+public class Newuser {
+
+	    @RequestMapping("/user")
+	    public String user() {
+//	        String username = httpServletRequest.getRemoteUser();
+////	        User user = userRepository.getOne(username);
+////	        modelMap.addAttribute("user", user);
+	        return "/Newuser";
+	    }
+	    
+	    @GetMapping("/user")
+	    public String back() {
+	     return "/Newuser";
+	    }
+	    
+	    @PostMapping("/#")
+	    public String henshu(@PathVariable int id, Model model) {
+	        User user = NewuserService.getAll();
+	        UserUpdateRequest userUpdateRequest = new UserUpdateRequest();
+	        userUpdateRequest.setId(user.getId());
+	        userUpdateRequest.setName(user.getName());
+	        userUpdateRequest.setPhone(user.getPhone());
+	        userUpdateRequest.setAddress(user.getAddress());
+	        model.addAttribute("userUpdateRequest", userUpdateRequest);
+	        return "user/edit";
+	    }
+
+	}
+
+	//1行目: 引数にHttpServletRequestを指定することによってそのオブジェクトが取得できる。
+	//2行目: getRemoteUserメソッドでユーザ名を取得する。
+	//3行目: getOneメソッドは、JpaRepositoryに最初から用意されているメソッドで、IDからインスタンスを取得することができる。
+	//4行目: addAttributeメソッドで、userをビューに送る。String以外のオブジェクトでもビューに送ることができる。
+
